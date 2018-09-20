@@ -14,12 +14,12 @@ public class CustomerBuilder {
 
 	public ApiCustomer createApiCustomer(Customer customer) {
 		return customer == null ? null : new ApiCustomer(customer.getId(), customer.getFirstName(), customer.getLastName(),
-				customer.getIdDocument(), customer.getAddress());
+				customer.getIdDocument(), customer.getAddress(),customer.getProfesion());
 	}
 
 	public Customer createCustomer(ApiCustomer apiCustomer) {
 		return apiCustomer == null ? null : new Customer(apiCustomer.getId(), apiCustomer.getFirstName(), apiCustomer.getLastName(),
-				apiCustomer.getIdDocument(), apiCustomer.getAddress());
+				apiCustomer.getIdDocument(), apiCustomer.getAddress(),apiCustomer.getProfesion());
 
 	}
 	
