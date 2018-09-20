@@ -26,18 +26,22 @@ public class Customer {
 
 	@Column(name = "ADDRESS")
 	private String address;
+	
+	@Column(name = "PROFESION")
+	private String profesion;
 
 	protected Customer() {
 
 	}
 
-	public Customer(Long id, String firstName, String lastName, String idDocument, String address) {
+	public Customer(Long id, String firstName, String lastName, String idDocument, String address,String profesion) {
 		super();
 		this.id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.idDocument = idDocument;
 		this.address = address;
+		this.profesion = profesion;
 	}
 
 	public Long getId() {
@@ -78,6 +82,14 @@ public class Customer {
 
 	public void setAddress(String address) {
 		this.address = address;
+	}
+
+	public String getProfesion() {
+		return profesion;
+	}
+
+	public void setProfesion(String profesion) {
+		this.profesion = profesion;
 	}
 
 }

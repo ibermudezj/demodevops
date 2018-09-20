@@ -14,12 +14,25 @@ public class ApiCustomer {
 
 	private String lastName;
 
+	private String profesion;
 
 	public ApiCustomer () {
 		super();
 	}
 	
-	public ApiCustomer(Long id, String firstName, String lastName, String idDocument, String address) {
+	public ApiCustomer(Long id, String firstName, String lastName, String idDocument, String address,String profesion) {
+		super();
+		this.id = id;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.idDocument = idDocument;
+		this.address = address;
+		this.profesion = profesion;
+		this.fullName = ((firstName == null ? "" : firstName) + " " + (lastName == null ? "" : lastName)).trim();
+	}
+
+
+	/*public ApiCustomer(Long id, String firstName, String lastName, String idDocument, String address) {
 		super();
 		this.id = id;
 		this.firstName = firstName;
@@ -28,7 +41,9 @@ public class ApiCustomer {
 		this.address = address;
 		this.fullName = ((firstName == null ? "" : firstName) + " " + (lastName == null ? "" : lastName)).trim();
 	}
-
+	*/
+	
+	
 	public Long getId() {
 		return id;
 	}
@@ -75,6 +90,14 @@ public class ApiCustomer {
 
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
+	}
+
+	public String getProfesion() {
+		return profesion;
+	}
+
+	public void setProfesion(String profesion) {
+		this.profesion = profesion;
 	}
 
 	
