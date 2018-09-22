@@ -7,6 +7,6 @@ public class VerificacionControllerTest {
 	@Test	
 	public void test1 () {
 		String bbva = "prueba cod 2";
-		System.out.println(bbva.toLowerCase());
+		System.out.println(bbva.toLowerCase());z
 	}
 }
