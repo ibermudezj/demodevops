@@ -28,12 +28,13 @@ public class DatabaseSeeder implements CommandLineRunner {
 		 /*
 		  *  Llenar la BD de menoria con usuario de prueba
 		  * */
+
 		 //2 usuarios
 
 		Customer c = new Customer(null, "Israel", "Contreras", "79897158", "Cra 82 Num 6-11 Bogotá","Ingeniero Sistemas");
 
 		customerRepository.save(c);
-		c = new Customer(null, "Maria", "González", "11344455", "Calle 80 #22-99 Bogotá","Abogada");
+		c = new Customer(null, "Sonia", "Hurtado", "11344455", "Calle 80 #22-99 Bogotá","Abogada");
 		customerRepository.save(c);
 		
 		Iterable<Customer> customers = customerRepository.findAll();

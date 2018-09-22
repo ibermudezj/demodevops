@@ -15,6 +15,13 @@
 
     <dependencies>
 		<dependency>
+			<groupId>org.apache.tomcat</groupId>
+			<artifactId>tomcat</artifactId>
+			<version>9.0.0.M1</version>
+			<type>pom</type>
+		</dependency>
+
+		<dependency>
 		    <groupId>javax.servlet</groupId>
 		    <artifactId>servlet-api</artifactId>
 		    <version>2.5</version>
@@ -67,7 +74,17 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
-        </plugins>
+		<plugin>
+			<groupId>org.apache.tomcat.maven</groupId>
+			<artifactId>tomcat7-maven-plugin</artifactId>
+			<version>2.2</version>
+        <configuration>
+		    <url>http://localhost:8090/manager/text</url>
+			<server>TomcatServer</server>
+			<path>/DemoCustomerApi</path>
+			</configuration>
+		</plugin>		
+		</plugins>
     </build>
 
     <repositories>
