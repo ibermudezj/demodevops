@@ -30,7 +30,7 @@ public class DatabaseSeeder implements CommandLineRunner {
 		  * */
 		 //2 usuarios
 
-		Customer c = new Customer(null, "Israel", "Contreras", "79897158", "Cra 82 Num 6-11 Bogotá","Ingeniero Sist");
+		Customer c = new Customer(null, "Israel", "Contreras", "79897158", "Cra 82 Num 6-11 Bogotá","Ingeniero Sistemas");
 
 		customerRepository.save(c);
 		c = new Customer(null, "Maria", "González", "11344455", "Calle 80 #22-99 Bogotá","Abogada");
