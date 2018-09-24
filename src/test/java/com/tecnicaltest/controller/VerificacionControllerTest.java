@@ -6,7 +6,7 @@ public class VerificacionControllerTest {
 	
 	@Test	
 	public void test1 () {
-		String bbva = "prueba cod 2";
+		String bbva = "Prueba cambio para generar un conflicto en código";
 		System.out.println(bbva.toLowerCase());
 	}
 }
