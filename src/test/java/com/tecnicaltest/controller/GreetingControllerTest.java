@@ -7,6 +7,6 @@ public class GreetingControllerTest {
 	@Test	
 	public void test1 () {
 		String jeru = "esta haciendo pruebas";
-		System.out.println(jeru.toLowerCase());
+		System.out.println(jeru.toLowerCase());z
 	}
 }
