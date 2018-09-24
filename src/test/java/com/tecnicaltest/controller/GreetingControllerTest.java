@@ -6,7 +6,7 @@ public class GreetingControllerTest {
 	
 	@Test	
 	public void test1 () {
-		String jeru = "para crear conflicto";
+		String jeru = "resuelto";
 		System.out.println(jeru.toLowerCase());
-	}
+  }
 }
