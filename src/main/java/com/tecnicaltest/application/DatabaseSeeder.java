@@ -31,10 +31,10 @@ public class DatabaseSeeder implements CommandLineRunner {
 
 		 //2 usuarios
 
-		Customer c = new Customer(null, "Israel", "Bermudez", "79897158", "Cra 82 Num 6-11 Bogotá","Especialista Sistemas");
+		Customer c = new Customer(null, "Israel", "Bermudez", "79897158", "Restrepo - Fragua","Especialista Sistemas");
 
 		customerRepository.save(c);
-		c = new Customer(null, "Sonia", "Hurtado", "11344455", "Calle 80 #22-99 Bogotá","Psicologa ");
+		c = new Customer(null, "Sonia", "Hurtado", "11344455", "Calle 80 #22-99 Bogotá","Psicologa");
 		customerRepository.save(c);
 		
 		Iterable<Customer> customers = customerRepository.findAll();
