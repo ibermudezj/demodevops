@@ -6,7 +6,7 @@ public class GreetingControllerTest {
 	
 	@Test	
 	public void test1 () {
-		String jeru = "resuelto";
+		String jeru = "Codifo fuente k - debe compilar ";
 		System.out.println(jeru.toLowerCase());
-  }
+	}
 }
