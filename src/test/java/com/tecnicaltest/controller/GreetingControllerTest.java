@@ -7,6 +7,6 @@ public class GreetingControllerTest {
 	@Test	
 	public void test1 () {
 		String jeru = "Prueba para subir un archivo";
-		System.out.println(jeru.toLowerCase());
+		System.out.println(jeru.toLowerCase());z
 	}
 }
