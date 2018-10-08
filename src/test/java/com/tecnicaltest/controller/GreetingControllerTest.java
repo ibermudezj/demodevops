@@ -8,5 +8,5 @@ public class GreetingControllerTest {
 	public void test1 () {
 		String jeru = "resuelto";
 		System.out.println(jeru.toLowerCase());
-  }
+		}
 }
